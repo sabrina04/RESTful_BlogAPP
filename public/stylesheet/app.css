@@ -1,0 +1,29 @@
+body{
+	background-color: #eee;
+}
+
+hr {
+	border-top: 1px solid #8c8b8b;
+}
+
+#delete {
+	display: inline;
+}
+
+image {
+	width:304px; height:228px;
+}
+
+.header {
+	text-align: center; 
+	margin: 70px auto;
+}
+
+.firstdiv {
+	width: 50%; 
+	margin: -10px auto; 
+}
+
+header div .description {
+	font-size: 18px;
+}

@@ -1,0 +1,20 @@
+<% include ./partials/header %>
+
+<div class="container">
+	<header class="jumbotron">
+		<% blogs.forEach(function(blog){ %>
+			<div>
+				<h4><%= blog.title %> </h4>
+				<figure>
+					<img src="<%= blog.image %>">
+					<figcaption><%= blog.created.toDateString() %> </figcaption>
+				</figure>
+				<br>
+				<p class="description"><%= blog.body.substring(0,100) %> ... <a type="button" class="btn btn-md btn-info" href="/blogs/<%= blog._id %>" >Read More</a></p>
+			</div>
+			<hr>
+		<% }); %>
+	</header>
+</div>
+
+<% include ./partials/footer %>
